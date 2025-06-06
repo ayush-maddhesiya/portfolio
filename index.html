@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>Ayush Maddhesiya | Senior Backend Developer</title>
+  <meta name="title" content="Ayush Maddhesiya | Senior Backend Developer" />
+  <meta name="description" content="Backend developer specializing in Node.js, Express, and GenAI. Explore Ayush Maddhesiya's portfolio, projects, and experience." />
+  <meta name="keywords" content="Ayush Maddhesiya, backend developer, Node.js, Express.js, MongoDB, GenAI, software engineer portfolio, API developer" />
+  <meta name="author" content="Ayush Maddhesiya" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ayushmaddhesiya.me/" />
+  <meta property="og:title" content="Ayush Maddhesiya | Senior Backend Developer" />
+  <meta property="og:description" content="Portfolio of Ayush Maddhesiya – building scalable backend systems with modern technologies and GenAI integration." />
+  <meta property="og:image" content="https://ayushmaddhesiya.me/assets/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://ayushmaddhesiya.me/" />
+  <meta property="twitter:title" content="Ayush Maddhesiya | Senior Backend Developer" />
+  <meta property="twitter:description" content="Explore Ayush's backend projects, experience, and technical skills." />
+  <meta property="twitter:image" content="https://ayushmaddhesiya.me/assets/og-image.jpg" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ayush Maddhesiya",
+    "url": "https://ayushmaddhesiya.me",
+    "jobTitle": "Senior Backend Developer",
+    "sameAs": [
+      "https://github.com/ayush-maddhesiya",
+      "https://linkedin.com/in/yourlinkedin"
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="/assets/favicon.ico" />
+  <link rel="canonical" href="https://ayushmaddhesiya.me/" />
+  <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE" />
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" /> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /> -->
+</head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav__brand">
+                <a href="#home">Ayush.dev</a>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#experience" class="nav__link">Experience</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+            <div class="nav__actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <span class="hero__greeting">Hello, I'm</span>
+                    <h1 class="hero__name">Ayush Maddhesiya</h1>
+                    <h2 class="hero__title">Senior Backend Developer</h2>
+                    <p class="hero__description">
+                        I architect and build scalable backend systems using Node.js, Express, and MongoDB. 
+                        Currently exploring the intersection of traditional backend development and GenAI technologies 
+                        to create intelligent, data-driven applications.
+                    </p>
+                    <div class="hero__stats">
+                        <div class="stat">
+                            <span class="stat__number">2+</span>
+                            <span class="stat__label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">15+</span>
+                            <span class="stat__label">Projects Built</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">5+</span>
+                            <span class="stat__label">Technologies</span>
+                        </div>
+                    </div>
+                    <div class="hero__actions">
+                        <a href="#projects" class="btn btn--primary">View My Work</a>
+                        <a href="mailto:ayushkumarmaddhesiya@gmail.com" class="btn btn--outline">Let's Talk</a>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <div class="code-block">
+                        <div class="code-block__header">
+                            <div class="code-block__dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <span class="code-block__title">server.js</span>
+                        </div>
+                        <div class="code-block__content">
+                            <pre><code><span class="code-comment">// Building scalable backend solutions</span>
+<span class="code-keyword">const</span> <span class="code-variable">express</span> = <span class="code-function">require</span>(<span class="code-string">'express'</span>);
+<span class="code-keyword">const</span> <span class="code-variable">app</span> = <span class="code-function">express</span>();
+
+<span class="code-variable">app</span>.<span class="code-function">use</span>(<span class="code-variable">express</span>.<span class="code-function">json</span>());
+
+<span class="code-variable">app</span>.<span class="code-function">get</span>(<span class="code-string">'/api/health'</span>, (<span class="code-variable">req</span>, <span class="code-variable">res</span>) => {
+  <span class="code-variable">res</span>.<span class="code-function">json</span>({ 
+    <span class="code-property">status</span>: <span class="code-string">'Server running'</span>,
+    <span class="code-property">developer</span>: <span class="code-string">'Ayush Maddhesiya'</span>
+  });
+});
+
+<span class="code-variable">app</span>.<span class="code-function">listen</span>(<span class="code-number">3000</span>);</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>
+                        I'm a passionate Backend Developer with expertise in building robust, scalable server-side applications. 
+                        Currently pursuing BTech at Shri Vaishnav Vidyapeeth Vishwavidyalaya with a strong academic record (CGPA: 7.5).
+                    </p>
+                    <p>
+                        My journey in backend development has led me through various challenging projects, from financial trading platforms 
+                        to peer-to-peer interview systems. I specialize in Node.js ecosystem, with deep knowledge of Express.js, MongoDB, 
+                        and modern authentication systems.
+                    </p>
+                    <p>
+                        As Secretary of Technical Affairs at Abhyudaya, I lead technical initiatives and mentor fellow developers. 
+                        I'm currently expanding my expertise into GenAI and agentic systems, exploring how AI can enhance traditional backend architectures.
+                    </p>
+                    
+                    <div class="about__highlights">
+                        <div class="highlight">
+                            <i class="fas fa-server"></i>
+                            <div>
+                                <h4>Backend Architecture</h4>
+                                <p>Designing scalable, maintainable server-side solutions</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-database"></i>
+                            <div>
+                                <h4>Database Design</h4>
+                                <p>Optimizing data structures and query performance</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-robot"></i>
+                            <div>
+                                <h4>AI Integration</h4>
+                                <p>Implementing GenAI solutions in backend systems</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__skills">
+                    <h3>Core Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <span>GenAI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Journey</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+            <div class="experience__timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Development Intern</h3>
+                            <span class="timeline-company">Coreintels Pvt Ltd</span>
+                            <span class="timeline-period">Nov 2024 - Jan 2025</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Led backend development for a peer-to-peer mock interview platform, handling complex user matching algorithms and real-time session management.</p>
+                            <ul class="timeline-achievements">
+                                <li>Architected RESTful APIs serving 1000+ concurrent users</li>
+                                <li>Designed MongoDB schemas optimizing query performance by 40%</li>
+                                <li>Implemented JWT-based authentication with role-based access control</li>
+                                <li>Built real-time feedback system using WebSocket connections</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tech">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Secretary of Technical Affairs</h3>
+                            <span class="timeline-company">Abhyudaya Coding Club</span>
+                            <span class="timeline-period">Mar 2024 - Present</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p>Leading technical initiatives and mentoring 50+ students in modern development practices and version control systems.</p>
+                            <ul class="timeline-achievements">
+                                <li>Conducted comprehensive Git/GitHub workshops for 50+ students</li>
+                                <li>Led team to Smart India Hackathon finals with innovative solutions</li>
+                                <li>Organized technical events and coding competitions</li>
+                                <li>Mentored junior developers in backend development practices</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-tech">
+                            <span>Leadership</span>
+                            <span>Mentoring</span>
+                            <span>Git</span>
+                            <span>Project Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects__grid">
+                <article class="project-card project-card--featured">
+                    <div class="project-card__image">
+                        <div class="project-preview">
+                            <div class="terminal">
+                                <div class="terminal-header">
+                                    <span class="terminal-title">forex-api</span>
+                                </div>
+                                <div class="terminal-body">
+                                    <p>$ npm start</p>
+                                    <p>🚀 Server running on port 3000</p>
+                                    <p>📊 Trading API initialized</p>
+                                    <p>✅ Database connected</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3>Forex Trading Platform</h3>
+                            <div class="project-card__links">
+                                <a href="#" class="project-link" aria-label="View code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link" aria-label="Live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-card__description">
+                            Enterprise-grade financial trading backend with advanced user/admin role management, 
+                            real-time transaction processing, and comprehensive audit logging. Features JWT authentication, 
+                            Zod validation, and optimized database queries for high-frequency trading operations.
+                        </p>
+                        <div class="project-card__features">
+                            <span>Real-time Trading</span>
+                            <span>Role-based Access</span>
+                            <span>Audit Logging</span>
+                            <span>High Performance</span>
+                        </div>
+                        <div class="project-card__tech">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>JWT</span>
+                            <span>Zod</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3>YouTube Backend Clone</h3>
+                            <div class="project-card__links">
+                                <a href="#" class="project-link" aria-label="View code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-card__description">
+                            Scalable video platform backend with complex MongoDB aggregation pipelines, 
+                            file upload handling, and comprehensive user management system.
+                        </p>
+                        <div class="project-card__tech">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                            <span>Multer</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3>Mini Cursor AI Assistant</h3>
+                            <div class="project-card__links">
+                                <a href="#" class="project-link" aria-label="View code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-card__description">
+                            AI-powered development assistant that generates code from natural language prompts, 
+                            featuring agentic capabilities and automated development workflows.
+                        </p>
+                        <div class="project-card__tech">
+                            <span>Python</span>
+                            <span>OpenAI API</span>
+                            <span>LangChain</span>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3>Mock Interview Platform</h3>
+                            <div class="project-card__links">
+                                <a href="#" class="project-link" aria-label="View code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <p class="project-card__description">
+                            Full-stack platform connecting candidates for synchronized practice sessions 
+                            with intelligent matching algorithms and real-time progress tracking.
+                        </p>
+                        <div class="project-card__tech">
+                            <span>Full Stack</span>
+                            <span>WebRTC</span>
+                            <span>Socket.io</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            <div class="contact__content">
+                <div class="contact__info">
+                    <h3>Ready to build something amazing together?</h3>
+                    <p>
+                        I'm always interested in discussing new opportunities, challenging projects, 
+                        or just having a conversation about backend development and emerging technologies.
+                    </p>
+                    <div class="contact__methods">
+                        <a href="mailto:ayushkumarmaddhesiya@gmail.com" class="contact-method">
+                            <div class="contact-method__icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-method__info">
+                                <span class="contact-method__label">Email</span>
+                                <span class="contact-method__value">ayushkumarmaddhesiya@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+919569784627" class="contact-method">
+                            <div class="contact-method__icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-method__info">
+                                <span class="contact-method__label">Phone</span>
+                                <span class="contact-method__value">+91-9569784627</span>
+                            </div>
+                        </a>
+                        <div class="contact-method">
+                            <div class="contact-method__icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-method__info">
+                                <span class="contact-method__label">Location</span>
+                                <span class="contact-method__value">Indore, Madhya Pradesh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/ayush-maddhesiya" class="social-link" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:ayushkumarmaddhesiya@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+919569784627" class="social-link" aria-label="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 Ayush Maddhesiya. Crafted with precision and passion.</p>
+                <p class="footer__subtitle">Backend Developer • AI Enthusiast • Problem Solver</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
