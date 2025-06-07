@@ -98,7 +98,7 @@ body {
 }
 
 /* Custom Cursor */
-.cursor-dot {
+/* .cursor-dot {
   width: 8px;
   height: 8px;
   background-color: var(--color-primary);
@@ -109,9 +109,9 @@ body {
   pointer-events: none;
   z-index: 9999;
   transition: transform 0.1s ease;
-}
+} */
 
-.cursor-outline {
+/* .cursor-outline {
   width: 40px;
   height: 40px;
   border: 2px solid var(--color-primary);
@@ -123,7 +123,7 @@ body {
   z-index: 9998;
   transition: all 0.15s ease;
   opacity: 0.5;
-}
+} */
 
 /* Container */
 .container {

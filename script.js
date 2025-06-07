@@ -105,40 +105,40 @@ class NavigationManager {
   }
 }
 
-// Custom Cursor
-class CustomCursor {
-  constructor() {
-    this.cursorDot = $('[data-cursor-dot]');
-    this.cursorOutline = $('[data-cursor-outline]');
-    this.init();
-  }
+// // Custom Cursor
+// class CustomCursor {
+//   constructor() {
+//     this.cursorDot = $('[data-cursor-dot]');
+//     this.cursorOutline = $('[data-cursor-outline]');
+//     this.init();
+//   }
   
-  init() {
-    if (window.innerWidth > 768) {
-      document.addEventListener('mousemove', (e) => this.updateCursor(e));
+//   init() {
+//     if (window.innerWidth > 768) {
+//       document.addEventListener('mousemove', (e) => this.updateCursor(e));
       
-      // Hide cursor on touch devices
-      document.addEventListener('touchstart', () => {
-        this.cursorDot.style.display = 'none';
-        this.cursorOutline.style.display = 'none';
-      });
-    } else {
-      this.cursorDot.style.display = 'none';
-      this.cursorOutline.style.display = 'none';
-    }
-  }
+//       // Hide cursor on touch devices
+//       document.addEventListener('touchstart', () => {
+//         this.cursorDot.style.display = 'none';
+//         this.cursorOutline.style.display = 'none';
+//       });
+//     } else {
+//       this.cursorDot.style.display = 'none';
+//       this.cursorOutline.style.display = 'none';
+//     }
+//   }
   
-  updateCursor(e) {
-    const posX = e.clientX;
-    const posY = e.clientY;
+//   updateCursor(e) {
+//     const posX = e.clientX;
+//     const posY = e.clientY;
     
-    this.cursorDot.style.left = `${posX}px`;
-    this.cursorDot.style.top = `${posY}px`;
+//     this.cursorDot.style.left = `${posX}px`;
+//     this.cursorDot.style.top = `${posY}px`;
     
-    this.cursorOutline.style.left = `${posX}px`;
-    this.cursorOutline.style.top = `${posY}px`;
-  }
-}
+//     this.cursorOutline.style.left = `${posX}px`;
+//     this.cursorOutline.style.top = `${posY}px`;
+//   }
+// }
 
 // Smooth Scrolling
 class SmoothScroll {
@@ -395,7 +395,7 @@ class App {
     // Initialize all components
     new ThemeManager();
     new NavigationManager();
-    new CustomCursor();
+    // new CustomCursor();
     new SmoothScroll();
     new AnimationObserver();
     new PerformanceMonitor();
